@@ -23,9 +23,11 @@ header {
 .navbar ul{
     list-style-type: none;
 }
-.navbar a{
+a{
     text-decoration: none; 
     color: black;
+}
+.navbar a{
     font-size: 16px;
     font-weight: bold;
     padding: 10px 5px;
@@ -78,7 +80,8 @@ section{
 
 .text-image {
     display: flex;           
-    align-items: flex-start;            
+    align-items: flex-start;     
+    padding-bottom: 5%;       
 }
 .column-text, .column-image{
     flex: 1; 
@@ -100,4 +103,54 @@ footer{
     padding: 15px 0;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.1); 
     border-top: 1px solid #e0e0e0;
+}
+footer h1{
+    text-align: center;
+    margin-bottom: 0%;
+    margin-top: 1%;
+    font-size: 2.5em;
+}
+#penguin-dot{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 2.5em;
+}
+.logos-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 3%;
+}
+.logos-list img{
+    width: 7em;
+}
+#hr-logo {
+  border: none;
+  height: 4px;
+  width: 10%;
+  background-color: #333;  
+  margin-bottom: 2%;
+}
+.contact{
+    background-color: #ffffff;
+    text-align: center;
+}
+.contact h2{
+    font-size: 2em;
+    margin-bottom: 0;
+}
+.contact hr{
+    border: none;
+    height: 3px;
+    width: 4%;
+    background-color: #333;  
+}
+.contact a:hover{
+    color: #9ce6ff;
+}
+.contact p{
+    font-size: 1.2em;
 }
