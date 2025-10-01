@@ -1,53 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reuniao de Pinguins</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+    </style>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap');
+    </style>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,900;1,14..32,900&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <img src="images/penguin-logo.jpg" alt="Penguin icon" id="logo">
             <ul class="links">
                 <li><a href="">Home</a></li>
-                <li><a href="">Programação</a></li>
-                <li><a href="">Mais Informações</a></li>
+                <li><a href="#programacao">Programação</a></li>
+                <li><a href="#mais-info">Mais Informações</a></li>
             </ul>
-            <button>Confirme sua presenca</button>
+            <button>Confirme sua presença</button>
         </nav>
     </header>
 
     <div id="title">
-            <h1>Reuniao de Pinguins</h1>
-            <h2>Data: 25/04/2026</h2>
-            <h2>Local: Aquário de São Paulo</h2>
+        <div id="title-left">
+            <h1 class="inter-black"><span>Reunião</span><br>de Pinguins</h1>
+        </div>
+        <div id="title-right">
+            <h2 class="inter-bold">25/04/2026</h2>
+            <h2 class="inter-bold">Aquário de São Paulo</h2>
+        </div>
     </div>
 
     <main>
         <div class="middle">
-            <h2>Prepare-se para uma experiência congelante!</h2>
-            <div class="carrossel">
-                carrossel
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://plus.unsplash.com/premium_photo-1664304481949-7342698006f3?q=80&w=1183&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/800x400?auto=yes&bg=777&fg=555&text=Primeiro Slide" alt="Primeiro Slide">
+                        <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center">
+                            <h2>Prepare-se para uma</h2>
+                            <h1>AVENTURA CONGELANTE!</h1>
+                        </div>
+                    </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://images.unsplash.com/photo-1595792463990-07008351a4fb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/800x400?auto=yes&bg=666&fg=444&text=Segundo Slide" alt="Segundo Slide">
+                    <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center">
+                            <h2>Com seus novos</h2>
+                            <h1>MELHORES AMIGOS</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://plus.unsplash.com/premium_photo-1661876658038-8d141832b5de?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide">
+                    <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center">
+                            <h1> NÃO FIQUE DE FORA</h1>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
             </div>
         </div>
-
+        
         <section>
             <h1>Sobre o Evento</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, asperiores. Exercitationem dolore impedit eos non possimus, perferendis vitae veniam temporibus architecto quis, modi nobis quidem voluptatibus, a rem adipisci nisi debitis porro doloribus assumenda deserunt! Nam incidunt quo dolore cumque nihil culpa corrupti magni omnis neque? Obcaecati ea sint minus. Omnis ea sapiente perferendis exercitationem architecto, voluptatum minus qui! Dolore maxime eum ab ipsum, in nemo fugiat repellat alias, qui quisquam ipsa? Ratione minima corrupti dolore quod libero odio dicta. Corporis eos repellendus laborum totam quo harum, dignissimos aliquid quos quod sit! Dolorem laudantium, eum est esse modi harum fugiat illum quisquam ullam minima rem odit error ducimus, dolor beatae molestias ut magnam voluptate voluptatum obcaecati quae accusamus. Illum iure eligendi ducimus sunt tenetur, beatae repellat asperiores nostrum necessitatibus dolorum sint veniam, doloribus numquam harum consequatur, alias neque. Enim voluptas facilis cum, iusto cumque architecto! Voluptate, iste asperiores. Maiores voluptas doloribus esse cupiditate id consequatur nemo quaerat tempora aliquid. Praesentium nam inventore facere aspernatur quidem molestiae provident aperiam ratione et recusandae vero officia voluptatem, quibusdam tempore accusamus rerum! Corporis, beatae eius! Excepturi fuga aperiam similique assumenda architecto magnam quos, mollitia qui, et veniam iusto vel. Accusantium quasi hic nulla laborum?</p>
+            <p>Você é apaixonado por estas aves carismáticas que conquistaram os continentes mais gelados?<br>
+                 Sempre quis saber mais sobre seu nado ágil, sua vida em colônia e os desafios que enfrentam na natureza?<br>
+                 Então, marque na sua agenda: no dia 25 de abril de 2026, 
+                 o Aquário de São Paulo será o palco da "Reunião de Pinguins", um evento especial totalmente dedicado a celebrar e conhecer de perto esses incríveis animais. 
+                 Preparamos uma programação exclusiva para que você, sua família e amigos possam mergulhar no universo dos pinguins de uma forma única e educativa.</p>
+
             <div class="text-image">
                 <div class="column-text">
-                    <h2>Sobre o Evento</h2>
+                    <h2 id="programacao">Programação</h2>
                     <p>
-                    Este parágrafo contém informações importantes sobre o nosso incrível encontro. 
-                    Falaremos sobre a programação, os convidados especiais e tudo o que você precisa 
-                    saber para aproveitar ao máximo a experiência.
-                    </p>
-                    <p>
-                        Lembre-se de confirmar sua presença o quanto antes. As vagas são limitadas
-                        e não queremos que você fique de fora desta grande celebração gelada. 
-                        Prepare seu melhor traje!
+                    <b>- Palestras com Especialistas:</b> Nossos biólogos e veterinários compartilharão conhecimentos e curiosidades sobre o comportamento, a reprodução, a alimentação e os importantes projetos de conservação dos pinguins.<br>
+                    <b>- Alimentação Comentada:</b> Assista de perto a um dos momentos preferidos dos nossos pinguins e aprenda, com a equipe de manejo, todos os detalhes sobre a dieta deles.<br>
+                    <b>- Atividades Interativas:</b> Participe de oficinas e atividades educativas pensadas para todas as idades. Uma oportunidade perfeita para as crianças aprenderem sobre a vida marinha de maneira divertida.<br>
+                    <b>- Visitas Guiadas Especiais:</b> Acompanhe nossos educadores em um tour exclusivo pelo Pinguinário, descobrindo segredos e fatos que você não vê em uma visita comum.
                     </p>
                 </div>
                 <div class="column-image">
@@ -55,44 +111,61 @@
                 </div>
             </div>
             <div class="text-image">
-                <div class="column-text">
-                    <h2>Sobre o Evento</h2>
-                    <p>
-                    Este parágrafo contém informações importantes sobre o nosso incrível encontro. 
-                    Falaremos sobre a programação, os convidados especiais e tudo o que você precisa 
-                    saber para aproveitar ao máximo a experiência.
-                    </p>
-                    <p>
-                        Lembre-se de confirmar sua presença o quanto antes. As vagas são limitadas
-                        e não queremos que você fique de fora desta grande celebração gelada. 
-                        Prepare seu melhor traje!
-                    </p>
-                </div>
                 <div class="column-image">
-                    <img src="images/penguin2.png" alt="Foto de pinguim">
+                    <img src="images/penguin2.png" alt="Foto de pinguim" id="penguin2">
+                </div>
+                <div class="column-text">
+                    <h2 id="mais-info">Mais Informações</h2>
+                    <p>
+                    <b>-</b> As atividades especiais da "Reunião de Pinguins" acontecerão das 10h às 17h.<br>
+                    <b>-</b> O Aquário dispõe de uma praça de alimentação com diversas opções de lanches, bebidas e refeições para sua conveniência ao longo do dia.<br>
+                    <b>-</b> As vagas para as atividades exclusivas são limitadas.<br>
+                    <b>-</b> Fotos são permitidas e incentivadas! No entanto, lembre-se de não usar o flash nas áreas dos animais, especialmente no Pinguinário, para garantir o bem-estar deles.
+                    </p>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <h1>Organização</h1>
-        <img src="images/penguin-dot.png" alt="Icone pequeno pinguim" id="penguin-dot">
-       <hr id="hr-logo">
-        <div class="logos-list">
-            <img src="images/penguin-logo.jpg" id="Logo Pinguim">
-            <img src="images/aquariosp-logo.png" id="Logo Aquario SP">
-            <img src="images/ibama-logo.png" id="Logo IBAMA">
-            <img src="images/gps-logo.png" id="Logo GPS">
-        </div>
-        <div class="contact">
-            <h2>Contato</h2>
-            <hr>
-            <p><b>E-mail:</b> <a href="mailto:reuniaopinguins@gmail.com">reuniaopinguins@gmail.com</a></p>
-        </div>
-    </footer>
 
+    <footer>
+
+        <div class="left">
+            <img src="images/penguin-logo.jpg" alt="Logo pinguim">
+            <br>
+            <br>
+            <p><a href="https://maps.app.goo.gl/MHxzKdJLMgPADmAB6">R. Huet Bacelar, 407 - Vila São José<br>São Paulo - SP, 04275-000</a></p>
+            <br>
+            <p><a href="tel:+551122735500"><b>+55 (11) 2273-5500</b></a></p>
+        </div>
+
+        <div class="center">
+            <h2>Assine nosso Newsletter!</h2>
+        <div class="custom_input">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg_icon bi-envelope" viewBox="0 0 16 16">
+        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"></path>
+        </svg>
+            <input class="input" type="text" placeholder="E-mail">
+        </div>
+            <button>Enviar</button>
+            <div class="socials">
+                <a href="https://www.instagram.com/aquariosp/"><i class="fa-brands fa-flag fa-instagram fa-xl"></i></a>
+                <a href="https://www.facebook.com/aquariodesp/"><i class="fa-brands fa-flag fa-square-facebook fa-xl"></i></a>
+                <a href="https://www.youtube.com/user/aquariodesaopaulo"><i class="fa-brands fa-flag fa-youtube fa-xl"></i></a>
+                <a href="https://x.com/aquariosp"><i class="fa-brands fa-flag fa-x-twitter fa-xl"></i></a>
+                <a href="https://www.tiktok.com/@aquariosp"><i class="fa-brands fa-flag fa-tiktok fa-xl"></i></a>
+            </div>
+        </div>
+
+        <div class="right">
+            <h2>Organização</h2>
+            <div class="logos">
+                <img src="images/aquariosp-logo.png">
+                <img src="images/ibama-logo.png">
+                <img src="images/gps-logo.png">
+            </div>
+        </div>
+    
+    </footer>
 
 </body>
 </html>
-
-<!-- Convidados, FONTE -->
